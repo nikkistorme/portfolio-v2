@@ -1,7 +1,7 @@
 
 const Home = props => (
   <div>
-    <p>Hey!</p>
+    <p>This will be the landing page. Pic, description, Links to other parts of the site.</p>
   </div>
 )
 
