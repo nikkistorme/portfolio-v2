@@ -1,8 +1,7 @@
+import Projects from '../components/Projects';
 
-const Home = props => (
-  <div>
-    <p>This will be the landing page. Pic, description, Links to other parts of the site.</p>
-  </div>
+const Home = () => (
+  <Projects />
 )
 
 export default Home;

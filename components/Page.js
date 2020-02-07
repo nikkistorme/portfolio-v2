@@ -6,22 +6,25 @@ import Meta from './Meta';
 
 const theme = {
   black: '#201E1F',
-  red: '#FF4000',
-  tangerine: '#FAAA8D',
-  white: '#FEEFDD',
-  blue: '#08b2e3',
-
+  white: '#f5f5f5',
+  blue: '#5871CD',
+  red: '#D22B32',
+  brown: '#DB9D3A',
+  orange: '#FB6F3E',
+  pink: '#F9ADC1',
+  fontHeading: "'Raleway', sans-serif",
+  fontBody: "'Frank Ruhl Libre', serif",
 };
 
 const StyledPage = styled.div`
-  background: ${props => props.theme.white};
+  /* background: ${props => props.theme.white}; */
   color: ${props => props.theme.black};
 `;
 
 const Inner = styled.div`
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 1em;
+  /* padding-top: 45px; */
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -36,12 +39,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
-    line-height: 2;
-    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-family: 'Frank Ruhl Libre', serif;
   }
   a {
     text-decoration: none;
-    color: ${theme.black};
+    color: inherit;
   }
   ul {
     margin: 0;
@@ -50,6 +53,16 @@ const GlobalStyle = createGlobalStyle`
       list-style-type: none;
     }
   }
+  h1,h2,h3,h4 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: inherit;
+    line-height: normal;
+    color: ${theme.white};
+  }
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 2rem; }
 `;
 
 export default class Page extends React.Component {
