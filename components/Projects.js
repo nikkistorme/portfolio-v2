@@ -61,6 +61,7 @@ class Projects extends React.Component {
           tech={[reactJS, nextJS, firebase, styledComponents]}
           img="/cooked-screenshot.png"
           repo="https://github.com/Nikkistorme/cooked"
+          link="https://cooked-nine-chi.now.sh/"
         />
         <ProjectCard
           title="Dashboard"
