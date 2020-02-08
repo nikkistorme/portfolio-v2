@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 import Header from './Header';
+import Footer from './Footer';
 import Meta from './Meta';
 
 const theme = {
@@ -16,16 +17,7 @@ const theme = {
   fontBody: "'Frank Ruhl Libre', serif",
 };
 
-const StyledPage = styled.div`
-  /* background: ${props => props.theme.white}; */
-  color: ${props => props.theme.black};
-`;
-
-const Inner = styled.div`
-  max-width: 1000px;
-  margin: 0 1em;
-  /* padding-top: 45px; */
-`;
+const rem = "2.5rem"
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -65,16 +57,35 @@ const GlobalStyle = createGlobalStyle`
   h3 { font-size: 2rem; }
 `;
 
+const StyledPage = styled.div`
+  color: ${props => props.theme.black};
+`;
+
+const Inner = styled.div`
+  max-width: 100%;
+  margin: 0 1em;
+  align-self: center;
+`;
+
+const PageAboveFooter = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`;
+
 export default class Page extends React.Component {
   render() {
-    return (
+    return (    
       <React.Fragment>
         <GlobalStyle />
         <ThemeProvider theme={theme}>
           <StyledPage>
             <Meta />
-            <Header />
-            <Inner>{this.props.children}</Inner>
+            <PageAboveFooter>
+              <Header />
+              <Inner>{this.props.children}</Inner>
+            </PageAboveFooter>
+            <Footer />
           </StyledPage>
         </ThemeProvider>
       </React.Fragment>

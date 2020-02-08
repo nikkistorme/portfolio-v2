@@ -2,42 +2,63 @@ import React from 'react';
 import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
 
-const ProjectContainer = styled.div`
-
+const ProjectContainer = styled.section`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1230px;
 `;
 
 class Projects extends React.Component {
   render() {
     const reactJS = {
       name: "ReactJS",
-      tech: "javascript"
+      tech: "javascript",
+      url: "https://reactjs.org/"
+    }
+    const jQuery = {
+      name: "jQuery",
+      tech: "javascript",
+      url: "https://jquery.com/"
     }
     const javaScript = {
       name: "JavaScript",
-      tech: "javascript"
+      tech: "javascript",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     }
-    const nodeJS = {
-      name: "NodeJS",
-      tech: "framework"
+    const nextJS = {
+      name: "NextJS",
+      tech: "framework",
+      url: "https://nextjs.org/"
     }
     const firebase = {
       name: "Firebase",
-      tech: "database"
+      tech: "database",
+      url: "https://firebase.google.com/"
     }
     const styledComponents = {
       name: "Styled Components",
-      tech: "style"
+      tech: "style",
+      url: "https://styled-components.com/"
     }
     const sass = {
       name: "Sass",
-      tech: "style"
+      tech: "style",
+      url: "https://sass-lang.com/"
+    }
+    const css = {
+      name: "CSS3",
+      tech: "style",
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
     }
     return (
       <ProjectContainer>
         <ProjectCard
           title="Cooked"
           info="A web app that I use to manage the inventory of my kitchen"
-          tech={[reactJS, nodeJS, firebase, styledComponents]}
+          tech={[reactJS, nextJS, firebase, styledComponents]}
           img="/cooked-screenshot.png"
           repo="https://github.com/Nikkistorme/cooked"
         />
@@ -47,6 +68,23 @@ class Projects extends React.Component {
           tech={[javaScript, sass]}
           img="/dashboard-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-7"
+          link="https://nikkistorme.github.io/dashboard/dashboard"
+        />
+        <ProjectCard
+          title="Wheel of Success"
+          info="A web based hang-man-style game"
+          tech={[javaScript, css]}
+          img="/wheel-of-success-screenshot.png"
+          repo="https://github.com/Nikkistorme/techdegree-project-6"
+          link="https://nikkistorme.github.io/wheel-of-success/wheel-of-success"
+        />
+        <ProjectCard
+          title="Gallery"
+          info="An interactive photo gallery"
+          tech={[jQuery, sass]}
+          img="/gallery-screenshot.png"
+          repo="https://github.com/Nikkistorme/techdegree-project-5"
+          link="https://nikkistorme.github.io/gallery/gallery"
         />
         <ProjectCard
           title="Circles"
@@ -54,6 +92,15 @@ class Projects extends React.Component {
           tech={[sass]}
           img="/circles-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-4"
+          link="https://nikkistorme.github.io/circles/circles"
+        />
+        <ProjectCard
+          title="Code Review Form"
+          info="A static example of a variety of input types in a form"
+          tech={[css]}
+          img="/code-review-screenshot.png"
+          repo="https://github.com/Nikkistorme/techdegree-project-3"
+          link="https://nikkistorme.github.io/code-review-form/code-review-form"
         />
       </ProjectContainer>
     )

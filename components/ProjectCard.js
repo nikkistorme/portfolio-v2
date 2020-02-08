@@ -2,8 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CardContainer = styled.div`
-  margin: 3em 1em 1em 1em;
+  margin: 0 0 2em 0;
+  padding: 15px;
   display: flex;
+  max-width: 369px;
+  width: 100%;
   h2 {
     color: ${props => props.theme.blue}
   }
@@ -11,6 +14,9 @@ const CardContainer = styled.div`
 
 const CardContentContainer = styled.div`
   flex: 1.2;
+  @media (min-width: 900px) {
+    p { font-size: 1.6rem; }
+  }
 `;
 
 const CardTitleContainer = styled.div`
@@ -27,12 +33,12 @@ const CardTitleContainer = styled.div`
 const CardImage = styled.div`
   width: 340px;
   margin-left: 1em;
-  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.15);
-  height: min-content;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+  /* height: min-content; */
   flex: 1;
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 `;
 
@@ -50,6 +56,9 @@ const TechPill = styled.span`
   border-radius: 20px;
   min-width: 45px;
   text-align: center;
+  @media (min-width: 900px) {
+    font-size: 1.2rem; 
+  }
   &.javascript {
     background-color: ${props => props.theme.red};
   }
@@ -70,22 +79,22 @@ class ProjectCard extends React.Component {
       <CardContainer>
         <CardContentContainer>
           <CardTitleContainer>
-            <h2>{this.props.title}</h2>
+            <h2><a href={this.props.link} target="_blank">{this.props.title}</a></h2>
             <a href={this.props.repo} target="_blank"><img src="/GitHub-Mark-32px.png" alt="GitHub Icon" /></a>
           </CardTitleContainer>
           <p>{this.props.info}</p>
           <PillContainer>
             {Object.keys(this.props.tech).map( (key) =>
-              <TechPill
-                key={key}
-                className={this.props.tech[key].tech}
-                >{this.props.tech[key].name}
+              <TechPill key={key} className={this.props.tech[key].tech}>
+                <a href={this.props.tech[key].url} target="_blank">{this.props.tech[key].name}</a>
               </TechPill>
             )}
           </PillContainer>
         </CardContentContainer>
         <CardImage>
-          <img src={this.props.img} alt={this.props.info} />
+          <a href={this.props.link} target="_blank">
+            <img src={this.props.img} alt={this.props.info} />
+          </a>
         </CardImage>
       </CardContainer>
     )
