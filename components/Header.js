@@ -30,22 +30,25 @@ const HeaderContent = styled.div`
   justify-content: space-between;
 `;
 
+const NameLine = styled.span`
+  height: 86px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  border-left: solid 2.5px ${props => props.theme.white};
+`;
+
 const HeaderTitleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
-  .mobile-h3 {
-    text-align: center;
+  align-items: flex-start;
+  .title {
     margin-top: 10px;
-    @media (min-width: 768px) {
-      font-size: 3rem;
-    }
+    font-size: 1.6rem;
   }
-  .bigger-h3 {
+  .description {
+    font-size: 1.6rem;
     display: none;
-    text-align: center;
-    margin: 20px auto;
-    max-width: 500px;
     @media (min-width: 768px) {
       display: inline-block;
     }
@@ -57,6 +60,8 @@ const HeaderPageTitle = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   .icons {
+    border-top: solid 2.5px ${props => props.theme.white};
+    padding-top: 10px;
     img {
       width: 30px;
       margin-right: 10px;
@@ -90,11 +95,14 @@ function Header() {
     <HeaderTotal>
       <div className="inner-box">
         <Nav />
-        <h1 className="title-name"><Link href="/"><a>Nikki Bright</a></Link></h1>
+        <h1 className="title-name">
+          <NameLine/>
+          <Link href="/"><a>Nikki Bright</a></Link>
+        </h1>
         <HeaderContent>
           <HeaderTitleContainer>
-            <h3 className="mobile-h3">Front-end Developer</h3>
-            <h3 className="bigger-h3">Creates custom, functional sites for individuals and businesses.</h3>
+            <h4 className="title">Front-end Developer</h4>
+            <h4 className="description">Custom, functional sites for individuals and businesses</h4>
           </HeaderTitleContainer>
           <HeaderPageTitle>
             <div className="icons">

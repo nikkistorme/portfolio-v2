@@ -57,7 +57,7 @@ class Projects extends React.Component {
       <ProjectContainer>
         <ProjectCard
           title="Cooked"
-          info="A web app that I use to manage the inventory of my kitchen"
+          info="A web app that I use to manage the inventory of my kitchen (active)"
           tech={[reactJS, nextJS, firebase, styledComponents]}
           img="/cooked-screenshot.png"
           repo="https://github.com/Nikkistorme/cooked"
@@ -65,7 +65,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Dashboard"
-          info="Mock dashboard displaying a variety of ways to display information to users"
+          info="Mock dashboard displaying a variety of ways to display information to users (inactive)"
           tech={[javaScript, sass]}
           img="/dashboard-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-7"
@@ -73,7 +73,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Wheel of Success"
-          info="A web based hang-man-style game"
+          info="A web based hang-man-style game (inactive)"
           tech={[javaScript, css]}
           img="/wheel-of-success-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-6"
@@ -81,7 +81,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Gallery"
-          info="An interactive photo gallery"
+          info="An interactive photo gallery (inactive)"
           tech={[jQuery, sass]}
           img="/gallery-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-5"
@@ -89,7 +89,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Circles"
-          info="A static site displaying an example design system"
+          info="A static site displaying an example design system (inactive)"
           tech={[sass]}
           img="/circles-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-4"
@@ -97,7 +97,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Code Review Form"
-          info="A static example of a variety of input types in a form"
+          info="A static example of a variety of input types in a form (inactive)"
           tech={[css]}
           img="/code-review-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-3"
