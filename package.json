@@ -23,7 +23,8 @@
     "next": "^9.3.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "vercel": "^19.1.2"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6"

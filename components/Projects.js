@@ -18,6 +18,11 @@ class Projects extends React.Component {
       tech: "javascript",
       url: "https://reactjs.org/"
     }
+    const vueJS = {
+      name: "Vue.js",
+      tech: "javascript",
+      url: "https://vuejs.org/"
+    }
     const jQuery = {
       name: "jQuery",
       tech: "javascript",
@@ -56,8 +61,16 @@ class Projects extends React.Component {
     return (
       <ProjectContainer>
         <ProjectCard
+          title="Open Movie Search"
+          info="Search through the Open Movie database and view search history"
+          tech={[vueJS]}
+          img="/open-movie-search-screenshot.png"
+          repo="https://github.com/Nikkistorme/open-movie-search"
+          link="https://open-movie-search-git-master.nikkistorme.vercel.app/"
+        />
+        <ProjectCard
           title="Cooked"
-          info="A web app that I use to manage the inventory of my kitchen (active)"
+          info="A web app that I use to manage the inventory of my kitchen"
           tech={[reactJS, nextJS, firebase, styledComponents]}
           img="/cooked-screenshot.png"
           repo="https://github.com/Nikkistorme/cooked"
@@ -65,7 +78,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Dashboard"
-          info="Mock dashboard displaying a variety of ways to display information to users (inactive)"
+          info="Mock dashboard displaying a variety of ways to display information to users"
           tech={[javaScript, sass]}
           img="/dashboard-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-7"
@@ -73,7 +86,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Wheel of Success"
-          info="A web based hang-man-style game (inactive)"
+          info="A web based hang-man-style game"
           tech={[javaScript, css]}
           img="/wheel-of-success-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-6"
@@ -81,7 +94,7 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Gallery"
-          info="An interactive photo gallery (inactive)"
+          info="An interactive photo gallery"
           tech={[jQuery, sass]}
           img="/gallery-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-5"
@@ -89,19 +102,11 @@ class Projects extends React.Component {
         />
         <ProjectCard
           title="Circles"
-          info="A static site displaying an example design system (inactive)"
+          info="A static site displaying an example design system"
           tech={[sass]}
           img="/circles-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-4"
           link="https://nikkistorme.github.io/circles/circles"
-        />
-        <ProjectCard
-          title="Code Review Form"
-          info="A static example of a variety of input types in a form (inactive)"
-          tech={[css]}
-          img="/code-review-screenshot.png"
-          repo="https://github.com/Nikkistorme/techdegree-project-3"
-          link="https://nikkistorme.github.io/code-review-form/code-review-form"
         />
       </ProjectContainer>
     )
