@@ -79,7 +79,7 @@ class ProjectCard extends React.Component {
       <CardContainer>
         <CardContentContainer>
           <CardTitleContainer>
-            <h2><a href={this.props.link} target="_blank">{this.props.title}</a></h2>
+            <h2><a href={this.props.link} target="_blank" rel="noreferrer" rel="noopener">{this.props.title}</a></h2>
             <a href={this.props.repo} target="_blank"><img src="/GitHub-Mark-32px.png" alt="GitHub Icon" /></a>
           </CardTitleContainer>
           <p>{this.props.info}</p>
