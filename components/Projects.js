@@ -61,9 +61,17 @@ class Projects extends React.Component {
     return (
       <ProjectContainer>
         <ProjectCard
+          title="Shelf"
+          info="Add books to shelves and look at all the cool books you've read!"
+          tech={[vueJS, firebase, sass]}
+          img="/shelf-screenshot.png"
+          repo="https://github.com/Nikkistorme/shelf"
+          link="https://shelfapp.xyz/"
+        />
+        <ProjectCard
           title="Open Movie Search"
           info="Search through the Open Movie database and view search history"
-          tech={[vueJS]}
+          tech={[vueJS, sass]}
           img="/open-movie-search-screenshot.png"
           repo="https://github.com/Nikkistorme/open-movie-search"
           link="https://open-movie-search-git-master.nikkistorme.vercel.app/"
@@ -91,14 +99,6 @@ class Projects extends React.Component {
           img="/wheel-of-success-screenshot.png"
           repo="https://github.com/Nikkistorme/techdegree-project-6"
           link="https://nikkistorme.github.io/wheel-of-success/wheel-of-success"
-        />
-        <ProjectCard
-          title="Gallery"
-          info="An interactive photo gallery"
-          tech={[jQuery, sass]}
-          img="/gallery-screenshot.png"
-          repo="https://github.com/Nikkistorme/techdegree-project-5"
-          link="https://nikkistorme.github.io/gallery/gallery"
         />
         <ProjectCard
           title="Circles"
