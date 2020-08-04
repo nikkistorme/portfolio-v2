@@ -27,7 +27,7 @@ const Footer = () => (
       <li><Link href="/"><a>Projects</a></Link></li>
       <li><Link href="/about"><a>About</a></Link></li>
       {/* <li><Link href="/blog"><a>Blog</a></Link></li> */}
-      <li><Link href="/contact"><a>Contact</a></Link></li>
+      {/* <li><Link href="/contact"><a>Contact</a></Link></li> */}
     </FooterNav>
     <p>Copyright &copy; 2020</p>
   </FooterContainer>
