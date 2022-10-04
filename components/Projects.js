@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import ProjectCard from './ProjectCard';
+import React from "react";
+import styled from "styled-components";
+import ProjectCard from "./ProjectCard";
 
 const ProjectContainer = styled.section`
   display: flex;
@@ -16,64 +16,64 @@ class Projects extends React.Component {
     const reactJS = {
       name: "ReactJS",
       tech: "javascript",
-      url: "https://reactjs.org/"
-    }
+      url: "https://reactjs.org/",
+    };
     const vueJS = {
       name: "Vue.js",
       tech: "javascript",
-      url: "https://vuejs.org/"
-    }
+      url: "https://vuejs.org/",
+    };
     const jQuery = {
       name: "jQuery",
       tech: "javascript",
-      url: "https://jquery.com/"
-    }
+      url: "https://jquery.com/",
+    };
     const javaScript = {
       name: "JavaScript",
       tech: "javascript",
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    }
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    };
     const nextJS = {
       name: "NextJS",
       tech: "framework",
-      url: "https://nextjs.org/"
-    }
+      url: "https://nextjs.org/",
+    };
     const firebase = {
       name: "Firebase",
       tech: "database",
-      url: "https://firebase.google.com/"
-    }
+      url: "https://firebase.google.com/",
+    };
     const styledComponents = {
       name: "Styled Components",
       tech: "style",
-      url: "https://styled-components.com/"
-    }
+      url: "https://styled-components.com/",
+    };
     const sass = {
       name: "Sass",
       tech: "style",
-      url: "https://sass-lang.com/"
-    }
+      url: "https://sass-lang.com/",
+    };
     const css = {
       name: "CSS3",
       tech: "style",
-      url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    }
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    };
     return (
       <ProjectContainer>
         <ProjectCard
           title="Shelf"
-          info="Add books to shelves and look at all the cool books you've read!"
+          info="Add books to shelves and track your progress!"
           tech={[vueJS, firebase, sass]}
-          img="/shelf-screenshot.png"
-          repo="https://github.com/Nikkistorme/shelf"
-          link="https://shelfapp.xyz/"
+          img="/shelf-screenshot-2.png"
+          repo="https://github.com/nikkistorme/shelf"
+          link="https://shelf.is/"
         />
         <ProjectCard
           title="Open Movie Search"
           info="Search through the Open Movie database and view search history"
           tech={[vueJS, sass]}
           img="/open-movie-search-screenshot.png"
-          repo="https://github.com/Nikkistorme/open-movie-search"
+          repo="https://github.com/nikkistorme/open-movie-search"
           link="https://open-movie-search-git-master.nikkistorme.vercel.app/"
         />
         <ProjectCard
@@ -81,7 +81,7 @@ class Projects extends React.Component {
           info="A web app that I use to manage the inventory of my kitchen"
           tech={[reactJS, nextJS, firebase, styledComponents]}
           img="/cooked-screenshot.png"
-          repo="https://github.com/Nikkistorme/cooked"
+          repo="https://github.com/nikkistorme/cooked"
           link="https://cooked-nine-chi.now.sh/"
         />
         <ProjectCard
@@ -89,7 +89,7 @@ class Projects extends React.Component {
           info="Mock dashboard displaying a variety of ways to display information to users"
           tech={[javaScript, sass]}
           img="/dashboard-screenshot.png"
-          repo="https://github.com/Nikkistorme/techdegree-project-7"
+          repo="https://github.com/nikkistorme/techdegree-project-7"
           link="https://nikkistorme.github.io/dashboard/dashboard"
         />
         <ProjectCard
@@ -97,7 +97,7 @@ class Projects extends React.Component {
           info="A web based hang-man-style game"
           tech={[javaScript, css]}
           img="/wheel-of-success-screenshot.png"
-          repo="https://github.com/Nikkistorme/techdegree-project-6"
+          repo="https://github.com/nikkistorme/techdegree-project-6"
           link="https://nikkistorme.github.io/wheel-of-success/wheel-of-success"
         />
         <ProjectCard
@@ -105,11 +105,11 @@ class Projects extends React.Component {
           info="A static site displaying an example design system"
           tech={[sass]}
           img="/circles-screenshot.png"
-          repo="https://github.com/Nikkistorme/techdegree-project-4"
+          repo="https://github.com/nikkistorme/techdegree-project-4"
           link="https://nikkistorme.github.io/circles/circles"
         />
       </ProjectContainer>
-    )
+    );
   }
 }
 
