@@ -1,0 +1,11 @@
+.button {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-s);
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #676BDC;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
+  color: var(--font-color-tertiary);
+}

@@ -1,0 +1,26 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-m);
+  border-radius: 10px;
+  background-color: var(--color-grey);
+}
+.project_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.project_heading {
+  color: var(--color-primary);
+}
+.project_images {
+  display: grid;
+  grid-template-columns: 74% 21%;
+  gap: 5%;
+}
+@media (min-width: 768px) {
+  .project {
+    gap: var(--spacing-s);
+  }
+}
