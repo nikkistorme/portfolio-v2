@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Shelf",
+    "description": "Organize your virtual bookshelves and track your reading progress.",
+    "tech": [
+      { "name": "Nuxt 3", "link": "https://nuxt.com/", "color": "#04dc82" },
+      { "name": "Vue 3", "link": "https://vuejs.org/", "color": "#43b883" },
+      { "name": "Supabase", "link": "https://supabase.io/", "color": "#2b825b" }
+    ],
+    "imgs": [
+      {
+        "alt": "Shelf on Desktop",
+        "srcset": [
+          {
+            "src": "/project-images/shelf-desktop.png"
+          }
+        ]
+      },
+      {
+        "alt": "Shelf on Mobile",
+        "srcset": [
+          {
+            "src": "/project-images/shelf-mobile.png"
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/shelf",
+    "url": "https://shelf-nikkistorme.vercel.app/"
+  },
+  {
+    "title": "Open Movie Search",
+    "description": "Search through the Open Movie database and view search history.",
+    "tech": [],
+    "imgs": [
+      {
+        "alt": "Open Movie Search on Desktop",
+        "srcset": [
+          {
+            "src": "/project-images/open-movie-search-desktop.png"
+          }
+        ]
+      },
+      {
+        "alt": "Open Movie Search on Mobile",
+        "srcset": [
+          {
+            "src": "/project-images/open-movie-search-mobile.png"
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/open-movie-search",
+    "url": "https://open-movie-search-git-master-nikkistorme.vercel.app/"
+  },
+  {
+    "title": "Cooked",
+    "description": "Manage the inventory of your pantry and kitchen.",
+    "tech": [],
+    "imgs": [
+      {
+        "alt": "Cooked on Desktop",
+        "srcset": [
+          {
+            "src": "/project-images/cooked-desktop.png"
+          }
+        ]
+      },
+      {
+        "alt": "Cooked on Mobile",
+        "srcset": [
+          {
+            "src": "/project-images/cooked-mobile.png"
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/cooked",
+    "url": "https://cooked-nine-chi.vercel.app/"
+  },
+  {
+    "title": "Dashboard",
+    "description": "Mock dashboard demonstrating a variety of ways to display information to users.",
+    "tech": [],
+    "imgs": [
+      {
+        "alt": "Dashboard on Desktop",
+        "srcset": [
+          {
+            "src": "/project-images/dashboard-desktop.png",
+            "width": 2880,
+            "height": 1528
+          }
+        ]
+      },
+      {
+        "alt": "Dashboard on Mobile",
+        "srcset": [
+          {
+            "src": "/project-images/dashboard-mobile.png",
+            "width": 2880,
+            "height": 1528
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/techdegree-project-7",
+    "url": "https://nikkistorme.github.io/dashboard/dashboard"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "blog": {
+    "href": "https://blog.nikkibright.com",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  "posts": {
+    "href": "#posts",
+    "target": "",
+    "rel": ""
+  },
+  "projects": {
+    "href": "#projects",
+    "target": "",
+    "rel": ""
+  },
+  "about": {
+    "href": "#about",
+    "target": "",
+    "rel": ""
+  },
+  "email": {
+    "href": "mailto:nikkistorme@gmail.com",
+    "target": "",
+    "rel": ""
+  },
+  "angel_list": {
+    "href": "https://angel.co/nicholas-bright-3/",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  "linkedin": {
+    "href": "https://www.linkedin.com/in/nikki-bright/",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  "github": {
+    "href": "https://github.com/nikkistorme",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  }
+}

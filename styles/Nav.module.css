@@ -1,0 +1,22 @@
+.top_nav {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top_nav_ul {
+  display: flex;
+}
+.top_nav_link {
+  margin: 5px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+@media (min-width: 768px) {
+  .top_nav_link {
+    margin: 10px;
+  }
+}
+
