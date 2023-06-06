@@ -12,8 +12,6 @@ type ProjectProps = {
       alt: string
       srcset: {
         src: string
-        width: number
-        height: number
       }[]
     }[]
   }
