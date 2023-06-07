@@ -5,14 +5,13 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
         {/* font-family: 'Josefin Sans', sans-serif; */}
-        <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
         {/* font-family: 'Frank Ruhl Libre', serif; */}
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" />
         {/* font-family: 'Raleway', sans-serif; */}
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
       </Head>
       <body>
         <Main />
