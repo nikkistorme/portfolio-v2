@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Shelf",
+    "description": "Organize your virtual bookshelves and track your reading progress.",
+    "tech": [
+      { "name": "Nuxt 3", "link": "https://nuxt.com/", "color": "#04dc82" },
+      { "name": "Vue 3", "link": "https://vuejs.org/", "color": "#43b883" },
+      { "name": "Supabase", "link": "https://supabase.io/", "color": "#2b825b" }
+    ],
+    "imgs": [
+      {
+        "alt": "Shelf",
+        "srcset": [
+          {
+            "src": "/project-images/shelf-desktop.webp",
+            "width": 2880,
+            "height": 1528
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/shelf",
+    "url": "https://shelf.is"
+  },
+  {
+    "title": "Dr. DM's Compendium",
+    "description": "A collection of resources to make running your D&D game a little easier.",
+    "tech": [
+      { "name": "Nuxt 3", "link": "https://nuxt.com/", "color": "#04dc82" },
+      { "name": "Vue 3", "link": "https://vuejs.org/", "color": "#43b883" }
+    ],
+    "imgs": [
+      {
+        "alt": "Dr. DM's Compendium",
+        "srcset": [
+          {
+            "src": "/project-images/shelf-desktop.webp",
+            "width": 2880,
+            "height": 1528
+          }
+        ]
+      }
+    ],
+    "repo": "",
+    "url": ""
+  },
+  {
+    "title": "Brighthouse",
+    "description": "Automatically run multiple Google Lighthouse audits and compile the results.",
+    "tech": [
+      { "name": "Next.js", "link": "https://nextjs.org/", "color": "#000000" },
+      { "name": "React", "link": "https://reactjs.org/", "color": "#62d9fb" }
+    ],
+    "imgs": [
+      {
+        "alt": "Brighthouse",
+        "srcset": [
+          {
+            "src": "/project-images/shelf-desktop.webp",
+            "width": 2880,
+            "height": 1528
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/lighthouse-runner",
+    "url": ""
+  },
+  {
+    "title": "Image Optimizer",
+    "description": "Convert, Compress, and resize images in bulk.",
+    "tech": [
+      { "name": "Next.js", "link": "https://nextjs.org/", "color": "#000000" },
+      { "name": "React", "link": "https://reactjs.org/", "color": "#62d9fb" }
+    ],
+    "imgs": [
+      {
+        "alt": "Brighthouse",
+        "srcset": [
+          {
+            "src": "/project-images/shelf-desktop.webp",
+            "width": 2880,
+            "height": 1528
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/image-optimizer",
+    "url": ""
+  }
+]
