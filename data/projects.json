@@ -1,5 +1,37 @@
 [
   {
+    "title": "Hyah UI",
+    "description": "A library of accessible UI components with detailed accessibility documentation.",
+    "tech": [
+      { "name": "Vue 3", "link": "https://vuejs.org/", "color": "#43b883" },
+      {
+        "name": "Vitepress",
+        "link": "https://vitepress.dev/",
+        "color": "#2b825b"
+      }
+    ],
+    "imgs": [
+      {
+        "alt": "Hyah UI on Desktop",
+        "srcset": [
+          {
+            "src": "/project-images/hyah-desktop.png"
+          }
+        ]
+      },
+      {
+        "alt": "Hyah UI on Mobile",
+        "srcset": [
+          {
+            "src": "/project-images/hyah-mobile.png"
+          }
+        ]
+      }
+    ],
+    "repo": "https://github.com/nikkistorme/hyah-ui",
+    "url": "https://hyah-ui.vercel.app/"
+  },
+  {
     "title": "Shelf",
     "description": "Organize your virtual bookshelves and track your reading progress.",
     "tech": [
@@ -52,31 +84,6 @@
     ],
     "repo": "https://github.com/nikkistorme/open-movie-search",
     "url": "https://open-movie-search-git-master-nikkistorme.vercel.app/"
-  },
-  {
-    "title": "Cooked",
-    "description": "Manage the inventory of your pantry and kitchen.",
-    "tech": [],
-    "imgs": [
-      {
-        "alt": "Cooked on Desktop",
-        "srcset": [
-          {
-            "src": "/project-images/cooked-desktop.png"
-          }
-        ]
-      },
-      {
-        "alt": "Cooked on Mobile",
-        "srcset": [
-          {
-            "src": "/project-images/cooked-mobile.png"
-          }
-        ]
-      }
-    ],
-    "repo": "https://github.com/nikkistorme/cooked",
-    "url": "https://cooked-nine-chi.vercel.app/"
   },
   {
     "title": "Dashboard",
