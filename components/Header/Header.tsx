@@ -1,7 +1,7 @@
-import Socials from './Socials';
-import Nav from './Nav';
+import Socials from '../Socials/Socials';
+import Nav from '../Nav/Nav';
 
-import styles from '@/styles/Header.module.css';
+import styles from './Header.module.css';
 
 export default function Header() {
   return (

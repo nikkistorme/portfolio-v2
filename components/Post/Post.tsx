@@ -1,17 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import links from '@/data/links.json';
-
-import styles from '@/styles/Post.module.css'
+import styles from './Post.module.css';
 
 type PostProps = {
   post: {
     title: string,
     brief: string,
-    slug: string,
-    dateAdded: string,
-    coverImage: string
+    url: string,
+    publishedAt: string,
+    coverImage: { url: string }
   }
 }
 
@@ -22,15 +20,15 @@ const formatDate = (date: string) => {
 
 export default function Post({post}: PostProps): JSX.Element {
   return (
-    <div className={styles.post}>
-      <Link href={`${links.blog.href}/${post.slug}`} target="_blank" rel="noopener noreferrer">
+    <article className={styles.post}>
+      <Link href={post.url} target="_blank" rel="noopener noreferrer">
         <h3 className={styles.post_heading}>{post.title}</h3>
       </Link>
       <div className={`next_image_wrapper ${styles.post_image_wrapper}`}>
-        <Image className={`next_image ${styles.post_image}`} src={post.coverImage} alt='' fill />
+        <Image className={`next_image ${styles.post_image}`} src={post.coverImage?.url} alt='' fill />
       </div>
       <p className={styles.post_brief}>{post.brief}</p>
-      <p>{formatDate(post.dateAdded)}</p>
-    </div>
+      <p>{formatDate(post.publishedAt)}</p>
+    </article>
   )
 }

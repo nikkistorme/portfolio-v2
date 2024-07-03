@@ -1,7 +1,7 @@
 import Link from "next/link";
 import links from "@/data/links.json";
 
-import styles from "@/styles/Nav.module.css";
+import styles from "./Nav.module.css";
 
 export default function Nav(): JSX.Element {
 

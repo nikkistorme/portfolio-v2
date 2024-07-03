@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import links from '@/data/links.json';
 
-import styles from '@/styles/Socials.module.css';
+import styles from './Socials.module.css';
 
 export default function Socials() {
 

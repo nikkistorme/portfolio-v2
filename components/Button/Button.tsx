@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from '@/styles/Button.module.css'
+import styles from './Button.module.css';
 
 type buttonProps = {
   children: React.ReactNode,

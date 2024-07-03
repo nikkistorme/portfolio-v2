@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '@/styles/Project.module.css'
+import styles from './Project.module.css';
 import Link from 'next/link'
 
 type ProjectProps = {
