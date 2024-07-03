@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
+import BlogPost from "../BlogPost/BlogPost";
 
-import styles from "./BlogSection.module.css";
-import Post from "../Post/Post";
-
-const gql = async (query: any, variables = {}) => {
+async function gql(query: any, variables = {}): Promise<any> {
   const data = await fetch("https://gql.hashnode.com/", {
     method: "POST",
     headers: {
@@ -18,7 +15,7 @@ const gql = async (query: any, variables = {}) => {
   return await data.json();
 };
 
-const getUserArticles = async () => {
+async function getPosts(): Promise<Array<any>> {
   const query = `
     query Publication {
       publication(host: "blog.nikkibright.com") {
@@ -44,27 +41,19 @@ const getUserArticles = async () => {
   const posts = data?.data?.publication?.posts?.edges || [];
 
   return posts;
-};
+}
 
-export default function BlogSection() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    if (posts.length !== 0) return;
-    getUserArticles().then((posts) => {
-      setPosts(posts);
-    });
-  });
+export default async function BlogSection(): Promise<React.JSX.Element> {
+  const posts = await getPosts();
 
   return (
-    <section id="posts" className={styles.blog_section}>
-      <div className={styles.blog_heading_wrapper}>
-        <h2>Blog</h2>
-        {/* <Link href={links.blog.href} target={links.blog.target} rel={links.github.rel}>View all posts</Link> */}
+    <section id="posts" className="flex flex-col items-start gap-6">
+      <div>
+        <h2 className="text-4xl font-bold">Blog</h2>
       </div>
-      <div className={styles.blog_posts_container}>
-        {posts?.map((p: any, i: number) => (
-          <Post post={p.node} key={i} />
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
+        {posts?.map((p: { node: any }, i: number) => (
+          <BlogPost key={i} post={p.node} />
         ))}
       </div>
     </section>

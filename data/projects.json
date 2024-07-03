@@ -61,31 +61,6 @@
     "url": "https://shelf-nikkistorme.vercel.app/"
   },
   {
-    "title": "Open Movie Search",
-    "description": "Search through the Open Movie database and view search history.",
-    "tech": [],
-    "imgs": [
-      {
-        "alt": "Open Movie Search on Desktop",
-        "srcset": [
-          {
-            "src": "/project-images/open-movie-search-desktop.png"
-          }
-        ]
-      },
-      {
-        "alt": "Open Movie Search on Mobile",
-        "srcset": [
-          {
-            "src": "/project-images/open-movie-search-mobile.png"
-          }
-        ]
-      }
-    ],
-    "repo": "https://github.com/nikkistorme/open-movie-search",
-    "url": "https://open-movie-search-git-master-nikkistorme.vercel.app/"
-  },
-  {
     "title": "Dashboard",
     "description": "Mock dashboard demonstrating a variety of ways to display information to users.",
     "tech": [],

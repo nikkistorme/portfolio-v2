@@ -1,17 +1,15 @@
-import Socials from '../Socials/Socials';
-import Nav from '../Nav/Nav';
+import MainNav from "../MainNav/MainNav";
+import Socials from "../Socials/Socials";
 
-import styles from './Header.module.css';
-
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
-    <>
-      <header className={styles.header}>
-        <div className={styles.header_inner}>
-          <Socials />
-          <Nav />
-        </div>
-      </header>
-    </>
+    <header
+      className="py-6 shadow-xl bg-background"
+    >
+      <div className="flex items-center w-full h-full max-w-screen-xl px-5 mx-auto">
+        <Socials />
+        <MainNav />
+      </div>
+    </header>
   );
 }
