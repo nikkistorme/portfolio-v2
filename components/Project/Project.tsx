@@ -1,24 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Project({
-  project
-}: {
-  project: {
-    title: string
-    description: string
-    repo: string
-    url: string
-    imgs: {
-      alt: string
-      srcset: {
-        src: string
-      }[]
-    }[]
-  }
-}): React.JSX.Element | null {
-  if (!project) return null;
-
+export default function Project({ project }: { project: Project }): React.JSX.Element | null {
   return (
     <article className="flex flex-col gap-4 p-6 rounded-xl bg-zinc-800">
       <div className="flex justify-between items-start">

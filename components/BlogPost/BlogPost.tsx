@@ -19,13 +19,10 @@ export default function BlogPost({
     return d.toLocaleDateString('en-US', { year: "numeric", month: "short", day: "numeric" });
   }
 
-
-  if (!post) return null;
-
   return (
     <article className="flex flex-col gap-2 md:gap-4 p-6 rounded-xl bg-zinc-800">
       <Link href={post.url} target="_blank" rel="noopener noreferrer">
-        <h3 className="text-2xl text-primary font-bold">{post.title}</h3>
+        <h3 className="text-2xl text-primary font-bold blog_post-title">{post.title}</h3>
       </Link>
       <div className="relative flex h-44 w-full mt-auto overflow-hidden rounded-md">
         <Image className="object-cover" src={post.coverImage.url} alt={post.title} fill={true} />

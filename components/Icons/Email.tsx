@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export default function EmailIcon(props: SVGProps<SVGSVGElement>): JSX.Element {
+export default function EmailIcon(props: SVGProps<SVGSVGElement>): React.JSX.Element {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" version="1.1" width="256" height="256" viewBox="0 0 256 256">
       <defs />
